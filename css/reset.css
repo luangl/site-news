@@ -1,5 +1,6 @@
+/* Reseta o estilo padrão de diversos elementos HTML */
 
-
+/* Reseta margem, preenchimento e borda para 0 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,17 +21,20 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+/* Define elementos HTML5 específicos como blocos */
+/* Alguns elementos HTML5 são inline por padrão, esse trecho os define como blocos */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
+/* Define estilo para lista desordenada e ordenada */
 ol, ul {
 	list-style: none;
 }
+
+/* Remove as aspas de citação de blocos de citação e citações em linha */
 blockquote, q {
 	quotes: none;
 }
@@ -39,6 +43,8 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+/* Remove espaçamento de borda de tabelas e mescla células vizinhas */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;

@@ -1,18 +1,22 @@
+/* Define o modelo de caixa border-box para todos os elementos */
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
+/* Define a largura e altura do elemento HTML */
 html {
 	width: 100%;
 	height: 100%;
 }
 
+/* Define a exibição inline-block para elementos dentro da navegação */
 nav li, nav div, nav img, .main-nav-options ul,  #main-nav-search {
 	display: inline-block;
 }
 
+/* Estilos para o cabeçalho principal */
 #main-header {
     position: fixed;
     top: 0;
@@ -22,11 +26,12 @@ nav li, nav div, nav img, .main-nav-options ul,  #main-nav-search {
     z-index: 1000; 
 }
 
+/* Ajusta o espaçamento acima do conteúdo principal */
 #content-wrapper {
     padding-top: 110px;
 }
 
-
+/* Estilos para a navegação principal */
 #main-nav {
 	font-family: Arial;
 	font-weight: bold;
@@ -35,6 +40,7 @@ nav li, nav div, nav img, .main-nav-options ul,  #main-nav-search {
 	margin: 0 auto;
 }
 
+/* Estilos para o logotipo da BBC */
 img#bbc-logo {
 	width: 85px;
 	padding-bottom: 5px;
@@ -42,44 +48,53 @@ img#bbc-logo {
 	top: -2px;
 }
 
+/* Estilos para a área de login */
 div#sign-in {
 	margin: 0px 70px 0px 5px;
 	padding: 10px 0px 0px 10px;
 	border-left: solid 1px #E4E4E4;
 }
 
+/* Estilos para a imagem na área de login */
 div#sign-in img {
 	float: left;
 	padding-bottom: 10px;
 }
 
+/* Estilos para o texto na área de login */
 div#sign-in p {
 	float: left;
 	padding: 5px 0px 0px 5px;
 }
 
+/* Estilos para as opções de navegação principal */
 div.main-nav-options {
 	padding-top: 0px;
 }
 
+/* Estilos para a lista de opções de navegação principal */
 div.main-nav-options ul {
 	float: left;
 }
 
+/* Estilos para os itens de opções de navegação principal */
 li.main-nav-options-item {
 	padding: 10px 10px 10px 10px;
 	border-left: solid 1px #E4E4E4;
 }
 
+/* Estilos para a imagem de sino */
 img#bell {
 	position: relative;
 	top: 5px;
 }
 
+/* Estilos para a seta para baixo */
 img#down-arrow {
 	margin-left: 30px;
 }
 
+/* Estilos para a área de pesquisa da navegação principal */
 div#main-nav-search {
 	float: left;
 	margin: 15px 0px 0px 0px;
@@ -88,6 +103,7 @@ div#main-nav-search {
 	bottom: 4px;
 }
 
+/* Estilos para a caixa de pesquisa e o texto na área de pesquisa */
 div#main-nav-search, input {
 	background-color: #E4E4E4;
 	outline: none;
@@ -96,29 +112,29 @@ div#main-nav-search, input {
 	color: black;
 }
 
+/* Estilos para o item de navegação ativo na seção de notícias */
 .news-section-nav-item.active {
     border-bottom: 4px solid #ffffff; 
 }
 
-
+/* Estilos para a imagem de sino no cabeçalho */
 div#main-nav-search img {
 	margin: 2px 2px -4px 0px;
 }
 
+/* Estilos para os links da seção de notícias */
 #news-section-nav li a {
     text-decoration: none;
 	color: #000;
 	font-size: 20px;
 }
 
-
-
-
-
+/* Estilos para a barra de navegação da seção de notícias */
 #news-section-nav {
 	background-color: #bd3737;
 }
 
+/* Estilos para a lista não ordenada da barra de navegação */
 #news-section-nav ul {
 	max-width: 978px;
 	margin-left: auto;
@@ -127,7 +143,7 @@ div#main-nav-search img {
 	padding-bottom: 5px;
 }
 
-
+/* Estilos para os itens da barra de navegação */
 #news-section-nav li {
 	font-size: 16px;
 	color: #ffffff;
@@ -136,20 +152,24 @@ div#main-nav-search img {
 	border-left: solid 1px #BB4545;
 }
 
+/* Estilos para o primeiro item da barra de navegação */
 #news-section-nav li:first-child {
 	padding-left: 0;
 	border-left: none;
 }
 
-#news-section-nav li: hover {
+/* Estilos quando o cursor passa por cima dos itens da barra de navegação */
+#news-section-nav li:hover {
 	border-bottom: solid 4px #fff;
 }
 
+/* Estilos para o cabeçalho da seção de notícias */
 div#news-section-header {
 	font-family: 'Arial', sans-serif;
 	background-color: #BB1919;
 }
 
+/* Estilos para o título da seção de notícias */
 div#news-section-title {
 	max-width: 978px;
 	margin-left: auto;
@@ -158,12 +178,14 @@ div#news-section-title {
 	color: #fff;
 }
 
+/* Estilos para o texto do título da seção de notícias */
 div#news-section-title h1 {
 	font-family: 'Lato', sans-serif;
 	font-size: 2.5em;
 	letter-spacing: 2px;
 }
 
+/* Estilos para a seção de notícias locais */
 div#local-news {
 	float: right;
 	border: solid 1px #BB4545;
@@ -172,14 +194,14 @@ div#local-news {
 	top: 5px;
 }
 
+/* Estilos para os links de notícias locais */
 div#local-news a {
 	text-decoration: none;
 	font-size: 1.2em;
 	color: #fff;
 }
 
-/*Content*/
-
+/* Estilos para o conteúdo principal */
 #content-wrapper {
 	max-width: 978px;
 	margin-left: auto;
@@ -187,13 +209,13 @@ div#local-news a {
 	font-family: 'Arial', sans-serif;
 }
 
-/*Main news*/
-
+/* Estilos para a seção de notícias principal */
 div#main-news-wrapper { 
 	width: 65%;
 	float: left;
 }
 
+/* Estilos para o título da seção de notícias principal */
 div#main-news-wrapper h3 {  /*section title: Technology*/
 	padding-top: 10px;
 	margin-bottom: 20px;
@@ -201,15 +223,18 @@ div#main-news-wrapper h3 {  /*section title: Technology*/
 	color: #404040;
 }
 
+/* Estilos para o sublinhado do título da seção de notícias principal */
 div#main-news-wrapper h3 u {
     text-decoration: none;
     border-bottom: 3px solid #BB1919;
 }
 
+/* Estilos para a notícia principal */
 #top-story {
 	height: 350px;
 }
 
+/* Estilos para o título da notícia principal */
 article#top-story h1 {
 	font-size: 1.95em;
 	font-weight: bold;
@@ -218,19 +243,21 @@ article#top-story h1 {
 	padding-bottom: 20px;
 }
 
+/* Estilos para a imagem da notícia principal */
 article#top-story img {
 	float: right;
 	width: 400px;
 	height: 223px;
 	padding-left: 15px;
-
 }
 
+/* Estilos para o texto da notícia principal */
 article#top-story p {
 	line-height: 1.25em;
 	color: #5A5A5A;
 }
 
+/* Estilos para a data da notícia */
 .article-date {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -239,21 +266,25 @@ article#top-story p {
 	color: #5A5A5A;
 }
 
+/* Estilos para o ícone da data */
 .article-date img {
 	padding-right: 4px;
 	position: relative;
 	bottom: -2px;
 }
 
+/* Estilos para a categoria de notícia na data */
 .article-date span {
 	color: #BB1919 !important;
 }
 
+/* Estilos para a linha vermelha no final do artigo */
 svg#red-line {
 	display: block;
 	padding-bottom: 10px;
 }
 
+/* Estilos para os links de artigos relacionados */
 a.related-article-link {
 	font-size: 0.9em;
 	color: #000;
@@ -261,20 +292,21 @@ a.related-article-link {
 	padding-bottom: 15px;
 }
 
+/* Estilos quando o cursor passa por cima dos links de artigos relacionados */
 a.related-article-link:hover {
 	color: #1167A8;
 }
 
-/*Other stories below top story*/
-
-div#more-top-stories {   /*wraps section below top story*/
+/* Estilos para a área de notícias adicionais no final do artigo principal */
+div#more-top-stories {   
 	padding-top: 15px;
 	border-top: solid 1px #DBDBDB;
 	position: relative;
 	display: block;
 }
 
-div#column-stories {    /*wraps 2 column stories within more-top-stories*/
+
+div#column-stories {    
 	float: left;
 	width: 72%;
 }
@@ -327,7 +359,7 @@ article.other-headline h5 {
 	line-height: 1.1em;
 }
 
-/*right-hand video section*/
+
 
 aside#watch-listen {
 	width: 30%;
