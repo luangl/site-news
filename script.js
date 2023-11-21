@@ -20,7 +20,7 @@ function scrollToSection(id) {
     }
 }
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     const headerHeight = document.getElementById('main-header').offsetHeight;
 
@@ -94,7 +94,7 @@ window.addEventListener('scroll', function () {
 });
 
 // Adicione um evento de clique para os links de navegação
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const tecnologiaLink = document.querySelector('a[href="#tecnologia"]');
     const saudeLink = document.querySelector('a[href="#saude"]');
     const culturaPopLink = document.querySelector('a[href="#cultura-pop"]'); // Nova categoria
@@ -103,73 +103,73 @@ document.addEventListener('DOMContentLoaded', function () {
     const maisLink = document.querySelector('a[href="#mais"]'); // Nova categoria
 
     if (tecnologiaLink) {
-        tecnologiaLink.addEventListener('click', function (e) {
+        tecnologiaLink.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToSection('#tecnologia');
         });
     }
 
     if (saudeLink) {
-        saudeLink.addEventListener('click', function (e) {
+        saudeLink.addEventListener('click',  (e) => {
             e.preventDefault();
             scrollToSection('#saude');
         });
     }
 
     if (culturaPopLink) { // Nova categoria
-        culturaPopLink.addEventListener('click', function (e) {
+        culturaPopLink.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToSection('#cultura-pop');
         });
     }
 
     if (jogosLink) { // Nova categoria
-        jogosLink.addEventListener('click', function (e) {
+        jogosLink.addEventListener('click',  (e) => {
             e.preventDefault();
             scrollToSection('#jogos');
         });
     }
 
     if (culinariaLink) { // Nova categoria
-        culinariaLink.addEventListener('click', function (e) {
+        culinariaLink.addEventListener('click',  (e) => {
             e.preventDefault();
             scrollToSection('#culinaria');
         });
     }
 
     if (maisLink) { // Nova categoria
-        maisLink.addEventListener('click', function (e) {
+        maisLink.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToSection('#mais');
         });
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const categories = document.querySelectorAll('.news-section-nav-item'); // Seleciona todas as categorias
 
-    categories.forEach(function (category) {
-        category.addEventListener('mouseover', function () {
+    categories.forEach( (category) => {
+        category.addEventListener('mouseover', () => {
             // Adiciona a classe 'active' ao passar o mouse sobre a categoria
             category.classList.add('active');
         });
 
-        category.addEventListener('mouseout', function () {
+        category.addEventListener('mouseout', () => {
             // Remove a classe 'active' ao tirar o mouse da categoria, exceto se for a categoria 'current'
             if (!category.classList.contains('current')) {
                 category.classList.remove('active');
             }
         });
 
-        category.addEventListener('click', function () {
+        category.addEventListener('click', () => {
             // Remove a classe 'active' de todas as categorias e adiciona à categoria clicada
-            categories.forEach(function (c) {
+            categories.forEach((c) =>  {
                 c.classList.remove('active');
             });
             category.classList.add('active');
 
             // Marca a categoria atual como 'current'
-            categories.forEach(function (c) {
+            categories.forEach((c) => {
                 c.classList.remove('current');
             });
             category.classList.add('current');
